@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Tasks:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tasks_jar</output-path>
+    <root id="archive" name="Tasks.jar">
+      <element id="module-output" name="Tasks" />
+      <element id="extracted-dir" path="D:/spigot/Spigot/Spigot-API/target/spigot-api-1.11.2-R0.1-SNAPSHOT-shaded.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

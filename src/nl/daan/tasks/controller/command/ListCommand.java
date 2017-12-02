@@ -11,15 +11,23 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
-import java.util.StringJoiner;
 
 public class ListCommand extends Command {
 
     @Override
-    public boolean run(CommandSender commandSender, org.bukkit.command.Command command, String s, String[] strings, ITaskRepository taskRepository) {
+    public boolean run(CommandSender commandSender, org.bukkit.command.Command command, String s, String[] args, ITaskRepository taskRepository) {
         Player p = (Player) commandSender;
 
-        ArrayList<Task> tasks = taskRepository.getSolved();
+        ArrayList<Task> tasks = null;
+
+        if(args.length >= 2) {
+            if(args[1].equals("all")) {
+                tasks = taskRepository.getUnsolved();
+            }
+        } else {
+            tasks = taskRepository.getAssignedTasks(p);
+        }
+
 
         TextComponent header =  new TextComponent( "---------Tasks---------\n" );
         header.setColor(ChatColor.GOLD);
@@ -30,6 +38,12 @@ public class ListCommand extends Command {
             element.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(t.description+"\n"+t.creator.getDisplayName()).create() ) );
             element.setColor(ChatColor.AQUA);
             element.setBold(true);
+
+            TextComponent assign = new TextComponent("  Assign " );
+            assign.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Assign this task to yourself").create() ) );
+            assign.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/task assign "+t.id) );
+            assign.setColor(ChatColor.BLUE);
+            assign.setBold(true);
 
             TextComponent teleport = new TextComponent("  Teleport " );
             teleport.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Teleport to this task").create() ) );
@@ -49,6 +63,7 @@ public class ListCommand extends Command {
             delete.setColor(ChatColor.RED);
             delete.setBold(true);
 
+            element.addExtra(assign);
             element.addExtra(teleport);
             element.addExtra(solve);
             element.addExtra(delete);

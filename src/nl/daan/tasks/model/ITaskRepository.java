@@ -1,5 +1,7 @@
 package nl.daan.tasks.model;
 
+import org.bukkit.entity.Player;
+
 import java.util.ArrayList;
 
 public interface ITaskRepository {
@@ -9,9 +11,11 @@ public interface ITaskRepository {
 
     public void delete(Task task);
 
-    public ArrayList<Task> getSolved();
+    public ArrayList<Task> getUnsolved();
 
     public ArrayList<Task> getAll();
 
     public Task getById(int id);
+
+    ArrayList<Task> getAssignedTasks(Player p);
 }

@@ -1,8 +1,7 @@
 package nl.daan.tasks.controller;
 
 import nl.daan.tasks.controller.command.CommandManager;
-import nl.daan.tasks.model.DummyTaskRepository;
-import nl.daan.tasks.model.ITaskRepository;
+import nl.daan.tasks.model.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -10,7 +9,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         super.onEnable();
 
-        ITaskRepository taskRepository = new DummyTaskRepository();
+        ITaskRepository taskRepository = new TaskRepository();
 
         CommandManager commandManager = new CommandManager(this, taskRepository);
         commandManager.registerCommands();

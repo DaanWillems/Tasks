@@ -1,5 +1,7 @@
 package nl.daan.tasks.model;
 
+import org.bukkit.entity.Player;
+
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
@@ -26,7 +28,7 @@ public class DummyTaskRepository implements ITaskRepository {
         tasks.remove(task);
     }
 
-    public ArrayList<Task> getSolved() {
+    public ArrayList<Task> getUnsolved() {
         return tasks.stream()
                 .filter(t->!t.solved)
                 .collect(Collectors.toCollection(ArrayList::new));
@@ -40,5 +42,10 @@ public class DummyTaskRepository implements ITaskRepository {
         return tasks.stream()
                 .filter(t->t.id == id)
                 .findFirst().orElse(null);
+    }
+
+    @Override
+    public ArrayList<Task> getAssignedTasks(Player p) {
+        return null;
     }
 }

@@ -204,7 +204,7 @@ public class TaskRepository implements ITaskRepository {
          Class.forName("com.mysql.jdbc.Driver");
          // Setup the connection with the DB
          connect = DriverManager
-                 .getConnection("redacted);
+                 .getConnection("redacted");
       }
       catch (Exception e) {
          e.printStackTrace();

@@ -225,8 +225,7 @@ public class TaskRepository implements ITaskRepository {
          Class.forName("com.mysql.jdbc.Driver");
          // Setup the connection with the DB
          connect = DriverManager
-                 .getConnection("jdbc:mysql://s12.minespan.com/23558?"
-                         + "user=23558&password=e89c1c5513&connectTimeout=0&socketTimeout=0&autoReconnect=true");
+                 .getConnection("redacted");
       }
       catch (Exception e) {
          e.printStackTrace();

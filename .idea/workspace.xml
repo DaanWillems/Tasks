@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c08c5ea-08e0-4cb2-9d76-0db8583aa16a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UpdateCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Tasks_jar/Tasks.jar" afterPath="$PROJECT_DIR$/out/artifacts/Tasks_jar/Tasks.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CommandManager.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CommandManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CreateCommand.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CreateCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/Task.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/Task.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/TaskRepository.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/TaskRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -104,38 +94,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TaskRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="239" column="43" lean-forward="false" selection-start-line="239" selection-start-column="43" selection-end-line="239" selection-end-column="43" />
+            <state relative-caret-position="629">
+              <caret line="240" column="66" lean-forward="false" selection-start-line="240" selection-start-column="66" selection-end-line="240" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
-                <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
-                <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
-                <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
-                <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
-                <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
-                <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
+                <marker date="1515344630237" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+                <marker date="1515344630237" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+                <marker date="1515344630237" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+                <marker date="1515344630237" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+                <marker date="1515344630237" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+                <marker date="1515344630237" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+                <marker date="1515344630237" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelpCommand.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HelpCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="442">
+              <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -214,8 +204,8 @@
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UpdateCommand.java" />
-        <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java" />
+        <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" />
       </list>
     </option>
   </component>
@@ -226,10 +216,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="x" value="1672" />
+    <option name="y" value="-128" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -908,15 +898,15 @@
       <workItem from="1512681928672" duration="7000" />
       <workItem from="1512852391891" duration="1358000" />
       <workItem from="1512906519550" duration="1051000" />
-      <workItem from="1515336975718" duration="6610000" />
+      <workItem from="1515336975718" duration="7054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51266000" />
+    <option name="totallyTimeSpent" value="51710000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="1672" y="-128" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -934,7 +924,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26309523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1001,21 +991,21 @@
           <caret line="206" column="33" lean-forward="false" selection-start-line="206" selection-start-column="33" selection-end-line="207" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
-            <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
-            <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
-            <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
+            <marker date="1515344630237" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+            <marker date="1515344630237" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+            <marker date="1515344630237" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+            <marker date="1515344630237" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344630237" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344630237" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
           </folding>
         </state>
       </provider>
@@ -1098,21 +1088,21 @@
           <caret line="20" column="0" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
-            <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
-            <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
-            <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
+            <marker date="1515344630237" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+            <marker date="1515344630237" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+            <marker date="1515344630237" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+            <marker date="1515344630237" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344630237" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344630237" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
           </folding>
         </state>
       </provider>
@@ -1416,36 +1406,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="629">
+          <caret line="240" column="66" lean-forward="false" selection-start-line="240" selection-start-column="66" selection-end-line="240" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1515344630237" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+            <marker date="1515344630237" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+            <marker date="1515344630237" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+            <marker date="1515344630237" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+            <marker date="1515344630237" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344630237" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344630237" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="239" column="43" lean-forward="false" selection-start-line="239" selection-start-column="43" selection-end-line="239" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
-            <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
-            <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
-            <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
-            <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -23,14 +23,14 @@ public class HelpCommand extends Command{
         helpCommand.setColor(ChatColor.BLUE);
         content.addExtra(helpCommand);
 
-        TextComponent createCommand = new TextComponent( "/task create {title} {description} - Creates a new task. \n" +
+        TextComponent createCommand = new TextComponent( "/task create [arguments] - Creates a new task. \n" +
                 "   -t [title] *required\n" +
                 "   -i [info/description] *required\n" +
                 "   -d [deadline] *required\n" );
         createCommand.setColor(ChatColor.BLUE);
         content.addExtra(createCommand);
 
-        TextComponent updateCommand = new TextComponent( "/task update {title} {description} - Updates a task. \n" +
+        TextComponent updateCommand = new TextComponent( "/task update [arguments] - Updates a task. \n" +
                 "   -t [title] \n" +
                 "   -i [info/description]\n" +
                 "   -d [deadline]\n" +

@@ -7,10 +7,12 @@ import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 import nl.daan.tasks.model.ITaskRepository;
 import nl.daan.tasks.model.Task;
+import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class ListCommand extends Command {
 
@@ -20,54 +22,33 @@ public class ListCommand extends Command {
 
         ArrayList<Task> tasks = null;
 
+        TextComponent header = null;
+
+        boolean listingAll = false;
+
         if(args.length >= 2) {
             if(args[1].equals("all")) {
-                tasks = taskRepository.getUnsolved();
+                tasks = taskRepository.getUnassigned();
+                header = new TextComponent( "---------Available Tasks---------\n" );
+                listingAll = true;
+            } else if(args[1].equals("all!")) {
+                tasks = taskRepository.getAll();
+                header = new TextComponent( "---------Available Tasks---------\n" );
+                listingAll = true;
+            } else {
+                return false;
             }
         } else {
             tasks = taskRepository.getAssignedTasks(p);
+            header = new TextComponent( "---------Your Tasks---------\n" );
         }
 
 
-        TextComponent header =  new TextComponent( "---------Tasks---------\n" );
         header.setColor(ChatColor.GOLD);
         header.setBold(true);
         TextComponent content =  new TextComponent("");
         for(Task t : tasks) {
-            TextComponent element =  new TextComponent("- " +t.print() );
-            element.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(t.description+"\n"+t.creator.getDisplayName()).create() ) );
-            element.setColor(ChatColor.AQUA);
-            element.setBold(true);
-
-            TextComponent assign = new TextComponent("  Assign " );
-            assign.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Assign this task to yourself").create() ) );
-            assign.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/task assign "+t.id) );
-            assign.setColor(ChatColor.BLUE);
-            assign.setBold(true);
-
-            TextComponent teleport = new TextComponent("  Teleport " );
-            teleport.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Teleport to this task").create() ) );
-            teleport.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/task teleport "+t.id) );
-            teleport.setColor(ChatColor.BLUE);
-            teleport.setBold(true);
-
-            TextComponent solve = new TextComponent(" Solve " );
-            solve.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Mark this task as solved").create() ) );
-            solve.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/task solve "+t.id) );
-            solve.setColor(ChatColor.GREEN);
-            solve.setBold(true);
-
-            TextComponent delete = new TextComponent(" Delete \n" );
-            delete.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Delete this task").create() ) );
-            delete.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/task delete "+t.id) );
-            delete.setColor(ChatColor.RED);
-            delete.setBold(true);
-
-            element.addExtra(assign);
-            element.addExtra(teleport);
-            element.addExtra(solve);
-            element.addExtra(delete);
-            content.addExtra(element);
+            content.addExtra(t.print(listingAll));
         }
 
         TextComponent footer =  new TextComponent( "" );

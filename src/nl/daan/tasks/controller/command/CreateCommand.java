@@ -14,20 +14,24 @@ public class CreateCommand extends Command {
         Player p = (Player) commandSender;
         Task task = new Task();
 
-        System.out.println("LENGTH: "+args.length);
-
         //We are only expecting 2 arguments, but the initial "create" is includes in this list as well
-        if(args.length != 3) {
+        if(args.length < 3) {
             return false;
         }
 
         task.title = args[1];
-        task.description = args[2];
+        String desc = "";
+        for(int i = 2; i < args.length; i++) {
+            desc += args[i]+" ";
+        }
+
+        task.description = desc;
         task.creator = p;
+        task.creatorUUID = p.getUniqueId().toString();
         task.location = p.getLocation();
 
         taskRepository.insert(task);
-        p.sendMessage(ChatColor.BLUE+" Task created");
+        p.sendMessage(ChatColor.BLUE+"Task created. ("+task.id+")");
 
         return true;
     }

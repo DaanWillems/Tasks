@@ -48,4 +48,9 @@ public class DummyTaskRepository implements ITaskRepository {
     public ArrayList<Task> getAssignedTasks(Player p) {
         return null;
     }
+
+    @Override
+    public ArrayList<Task> getUnassigned() {
+        return null;
+    }
 }

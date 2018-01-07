@@ -18,4 +18,6 @@ public interface ITaskRepository {
     public Task getById(int id);
 
     ArrayList<Task> getAssignedTasks(Player p);
+
+    ArrayList<Task> getUnassigned();
 }

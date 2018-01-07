@@ -1,0 +1,8 @@
+name: Tasks
+version: 0.1
+author: Solawep
+main: nl.daan.tasks.controller.Main
+commands:
+  task:
+    description: Displays help message
+    usage: /task

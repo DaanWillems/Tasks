@@ -28,7 +28,9 @@ public class CommandManager implements CommandExecutor {
         commandMap.put("delete", new DeleteCommand());
         commandMap.put("solve", new SolveCommand());
         commandMap.put("assign", new AssignCommand());
+        commandMap.put("claim", new AssignCommand());
         commandMap.put("teleport", new TeleportCommand());
+        commandMap.put("unassign", new UnassignCommand());
     }
 
     @Override

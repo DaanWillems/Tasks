@@ -115,11 +115,31 @@ public class TaskRepository implements ITaskRepository {
 
          statement = connect.createStatement();
          preparedStatement = connect.
-                 prepareStatement("select * from tasks where assignedUUID = ?");
+                 prepareStatement("select * from tasks where assignedUUID = ? AND solved = ?");
          preparedStatement.setString(1, p.getUniqueId().toString());
+         preparedStatement.setBoolean(2, false);
 
-         System.out.println(preparedStatement);
          resultSet = preparedStatement.executeQuery();
+         while (resultSet.next()) {
+            Task t = convertTask(resultSet);
+            tasks.add(t);
+         }
+      }
+      catch (Exception e) {
+         e.printStackTrace();
+      }
+      return tasks;
+   }
+
+   @Override
+   public ArrayList<Task> getUnassigned() {
+      ArrayList<Task> tasks = new ArrayList<>();
+      try {
+
+         statement = connect.createStatement();
+         resultSet = statement
+                 .executeQuery("select * from tasks where assignedUUID IS NULL");
+
          while (resultSet.next()) {
             Task t = convertTask(resultSet);
             tasks.add(t);
@@ -137,8 +157,10 @@ public class TaskRepository implements ITaskRepository {
          t.title = resultSet.getString("title");
          t.description = resultSet.getString("description");
          t.creator = Bukkit.getPlayer(UUID.fromString(resultSet.getString("creatorUUID")));
+         t.creatorUUID = resultSet.getString("creatorUUID");
          if (resultSet.getString("assignedUUID") != null) {
             t.assignedPlayer = Bukkit.getPlayer(UUID.fromString(resultSet.getString("assignedUUID")));
+            t.assignedUUID = resultSet.getString("assignedUUID");
          }
          t.solved = resultSet.getBoolean("solved");
          t.location = getLocationFromString(resultSet.getString("location"));
@@ -151,8 +173,7 @@ public class TaskRepository implements ITaskRepository {
    }
 
    public PreparedStatement convertTask(Task task, boolean newTask) {
-
-       //Start of by serializing the location
+      //Start of by serializing the location
       Location loc = task.location;
       String locString = loc.getWorld().getName() + ":" + loc.getX() + ":" + loc.getY() + ":" + loc.getZ() + ":" + loc.getYaw() + ":" + loc.getPitch() ;
       try {
@@ -181,7 +202,7 @@ public class TaskRepository implements ITaskRepository {
             preparedStatement.setInt(7, task.id);
          }
 
-         preparedStatement.setString(1, task.creator.getUniqueId().toString());
+         preparedStatement.setString(1, task.creatorUUID.toString());
 
          if(task.assignedPlayer != null) {
             preparedStatement.setString(2, task.assignedPlayer.getUniqueId().toString());
@@ -204,7 +225,8 @@ public class TaskRepository implements ITaskRepository {
          Class.forName("com.mysql.jdbc.Driver");
          // Setup the connection with the DB
          connect = DriverManager
-                 .getConnection("redacted);
+                 .getConnection("jdbc:mysql://s12.minespan.com/23558?"
+                         + "user=23558&password=e89c1c5513&connectTimeout=0&socketTimeout=0&autoReconnect=true");
       }
       catch (Exception e) {
          e.printStackTrace();

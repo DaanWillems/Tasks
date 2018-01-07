@@ -6,6 +6,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -43,7 +44,7 @@ public class TaskRepository implements ITaskRepository {
     public void delete(Task task) {
        try {
           preparedStatement = connect
-                  .prepareStatement("DELETE FROM `23558`.`tasks` WHERE `tasks`.`id` = ?");
+                  .prepareStatement("DELETE FROM `23558`.`tasks` WHERE `id` = ?");
           preparedStatement.setInt(1, task.id);
           preparedStatement.executeUpdate();
        }
@@ -165,6 +166,9 @@ public class TaskRepository implements ITaskRepository {
          t.solved = resultSet.getBoolean("solved");
          t.location = getLocationFromString(resultSet.getString("location"));
          t.id = resultSet.getInt("id");
+         if (resultSet.getString("deadline") != null) {
+            t.deadline = resultSet.getDate("deadline").toLocalDate();
+         }
          return t;
       } catch (Exception e) {
          e.printStackTrace();
@@ -186,8 +190,9 @@ public class TaskRepository implements ITaskRepository {
                             "`solved`, " +
                             "`title`, " +
                             "`description`, " +
-                            "`location`) " +
-                            "VALUES (NULL, ?, ?, ?, ?, ?, ?);");
+                            "`location`, " +
+                            "`deadline`) " +
+                            "VALUES (NULL, ?, ?, ?, ?, ?, ?, ?);");
 
          } else {
             preparedStatement = connect
@@ -197,9 +202,10 @@ public class TaskRepository implements ITaskRepository {
                             "`solved` = ?, " +
                             "`title` = ?, " +
                             "`description` = ?, " +
-                            "`location` = ?" +
+                            "`location` = ?," +
+                            "`deadline` = ? " +
                             "WHERE `id` = ?;");
-            preparedStatement.setInt(7, task.id);
+            preparedStatement.setInt(8, task.id);
          }
 
          preparedStatement.setString(1, task.creatorUUID.toString());
@@ -213,6 +219,12 @@ public class TaskRepository implements ITaskRepository {
          preparedStatement.setString(4, task.title);
          preparedStatement.setString(5, task.description);
          preparedStatement.setString(6, locString);
+         if(task.deadline != null) {
+            final java.sql.Date sqlDate=  java.sql.Date.valueOf(task.deadline);
+            preparedStatement.setDate(7, sqlDate);
+         } else {
+            preparedStatement.setString(7, null);
+         }
       }
       catch (Exception e) {
          e.printStackTrace();
@@ -225,7 +237,7 @@ public class TaskRepository implements ITaskRepository {
          Class.forName("com.mysql.jdbc.Driver");
          // Setup the connection with the DB
          connect = DriverManager
-                 .getConnection("redacted");
+                 .getConnection("[redacted]");
       }
       catch (Exception e) {
          e.printStackTrace();

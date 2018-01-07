@@ -9,6 +9,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.UUID;
 
 public class Task {
@@ -22,12 +24,13 @@ public class Task {
     public boolean solved;
     public Player assignedPlayer;
     public String assignedUUID;
+    public LocalDate deadline;
 
     public Task() {
 
     }
 
-    public Task(int id, String title, String description, Player creator, Location location, boolean solved, Player assignedPlayer) {
+    public Task(int id, String title, String description, Player creator, Location location, boolean solved, Player assignedPlayer, LocalDate deadline) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -35,6 +38,7 @@ public class Task {
         this.location = location;
         this.solved = solved;
         this.assignedPlayer = assignedPlayer;
+        this.deadline = deadline;
     }
 
     /**
@@ -68,7 +72,15 @@ public class Task {
             assignedName = "\n"+assignedPlayer.getPlayerListName();
         }
 
-        element.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(description+"\n"+id+"\n"+creatorName+assignedName).create() ) );
+        String deadlineString = "None";
+        if(deadline != null) {
+            deadlineString = deadline.toString();
+        }
+
+        element.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Id: "+id+"\n"
+                +"Description: "+description+"\n"
+                +"Creator: "+creatorName+"\n"
+                +"Deadline: "+deadlineString).create()));
         element.setColor(ChatColor.AQUA);
         element.setBold(true);
 

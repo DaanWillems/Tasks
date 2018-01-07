@@ -19,23 +19,34 @@ public class HelpCommand extends Command{
 
         TextComponent content = new TextComponent( "" );
 
-        TextComponent helpCommand = new TextComponent( "/help - Shows this window\n" );
+        TextComponent helpCommand = new TextComponent( "/task help - Shows this window\n" );
         helpCommand.setColor(ChatColor.BLUE);
         content.addExtra(helpCommand);
 
-        TextComponent createCommand = new TextComponent( "/create {title} {description} - Creates a new task\n" );
+        TextComponent createCommand = new TextComponent( "/task create {title} {description} - Creates a new task. \n" +
+                "   -t [title] *required\n" +
+                "   -i [info/description] *required\n" +
+                "   -d [deadline] *required\n" );
         createCommand.setColor(ChatColor.BLUE);
         content.addExtra(createCommand);
 
-        TextComponent listAllCommand = new TextComponent( "/list all - Lists available tasks\n" );
+        TextComponent updateCommand = new TextComponent( "/task update {title} {description} - Updates a task. \n" +
+                "   -t [title] \n" +
+                "   -i [info/description]\n" +
+                "   -d [deadline]\n" +
+                "   -id [id] *required\n" );
+        updateCommand.setColor(ChatColor.BLUE);
+        content.addExtra(updateCommand);
+
+        TextComponent listAllCommand = new TextComponent( "/task list all - Lists available tasks\n" );
         listAllCommand.setColor(ChatColor.BLUE);
         content.addExtra(listAllCommand);
 
-        TextComponent listCommand = new TextComponent( "/list - Lists your tasks\n" );
+        TextComponent listCommand = new TextComponent( "/task list - Lists your tasks\n" );
         listCommand.setColor(ChatColor.BLUE);
         content.addExtra(listCommand);
 
-        TextComponent claimCommand = new TextComponent( "/claim - Gives you a task to complete\n" );
+        TextComponent claimCommand = new TextComponent( "/task claim - Gives you a task to complete\n" );
         claimCommand.setColor(ChatColor.BLUE);
         content.addExtra(claimCommand);
 

@@ -7,6 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c08c5ea-08e0-4cb2-9d76-0db8583aa16a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UpdateCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Tasks_jar/Tasks.jar" afterPath="$PROJECT_DIR$/out/artifacts/Tasks_jar/Tasks.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CommandManager.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CommandManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CreateCommand.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/controller/command/CreateCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/Task.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/Task.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/TaskRepository.class" afterPath="$PROJECT_DIR$/out/production/Tasks/nl/daan/tasks/model/TaskRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java" afterPath="$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,21 +31,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AssignCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/AssignCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CommandManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="442">
+              <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -43,8 +44,8 @@
       <file leaf-file-name="ListCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/ListCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+            <state relative-caret-position="-73">
+              <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -73,21 +74,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnassignCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UnassignCommand.java">
+      <file leaf-file-name="CreateCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="505">
+              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java">
+      <file leaf-file-name="DeleteCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/DeleteCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" column="53" lean-forward="false" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+            <state relative-caret-position="187">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -96,45 +107,45 @@
       <file leaf-file-name="TaskRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="230" column="29" lean-forward="true" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
+            <state relative-caret-position="612">
+              <caret line="239" column="43" lean-forward="false" selection-start-line="239" selection-start-column="43" selection-end-line="239" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1515337132550" expanded="true" signature="1094:1143" ph="DELETE FROM " />
-                <marker date="1515337132550" expanded="true" signature="1094:1144" ph="DELETE FROM " />
-                <marker date="1515337132550" expanded="true" signature="1549:1585" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="2034:2048" ph="select * fro... tickets" />
-                <marker date="1515337132550" expanded="true" signature="2034:2053" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="2469:2499" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="2469:2500" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="2971:3011" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="2971:3012" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="2971:3013" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="2971:3028" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="3654:3700" ph="select * fro... tasks" />
-                <marker date="1515337132550" expanded="true" signature="5216:5513" ph="INSERT INTO `23558`.`tickets`... " />
-                <marker date="1515337132550" expanded="true" signature="5216:5623" ph="INSERT INTO `23558`.`tickets`... " />
-                <marker date="1515337132550" expanded="true" signature="5726:6097" ph="UPDATE `2355... " />
+                <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+                <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+                <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+                <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+                <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+                <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+                <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SolveCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/SolveCommand.java">
+      <file leaf-file-name="HelpCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerJoinEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/events/PlayerJoinEvent.java">
+      <file leaf-file-name="UpdateCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UpdateCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="73" column="47" lean-forward="false" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -151,11 +162,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test</find>
       <find>p</find>
       <find>p.</find>
       <find>system</find>
       <find>getAssign</find>
+      <find>tasks</find>
+      <find>test</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Java Projects\Tasks</dir>
@@ -193,15 +205,16 @@
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/DeleteCommand.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/model/ITaskRepository.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/model/DummyTaskRepository.java" />
-        <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UnassignCommand.java" />
-        <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/AssignCommand.java" />
-        <option value="$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/Main.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/ListCommand.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/events/PlayerJoinEvent.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java" />
+        <option value="$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java" />
+        <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java" />
+        <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UpdateCommand.java" />
+        <option value="$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java" />
         <option value="$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java" />
       </list>
     </option>
@@ -318,6 +331,10 @@
               <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -346,6 +363,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -857,12 +908,12 @@
       <workItem from="1512681928672" duration="7000" />
       <workItem from="1512852391891" duration="1358000" />
       <workItem from="1512906519550" duration="1051000" />
-      <workItem from="1515336975718" duration="159000" />
+      <workItem from="1515336975718" duration="6610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44815000" />
+    <option name="totallyTimeSpent" value="51266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -871,6 +922,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -895,7 +947,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -944,35 +995,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/SolveCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3502">
           <caret line="206" column="33" lean-forward="false" selection-start-line="206" selection-start-column="33" selection-end-line="207" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515337132550" expanded="true" signature="1094:1143" ph="DELETE FROM " />
-            <marker date="1515337132550" expanded="true" signature="1094:1144" ph="DELETE FROM " />
-            <marker date="1515337132550" expanded="true" signature="1549:1585" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2034:2048" ph="select * fro... tickets" />
-            <marker date="1515337132550" expanded="true" signature="2034:2053" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2469:2499" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2469:2500" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3011" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3012" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3013" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3028" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="3654:3700" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="5216:5513" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515337132550" expanded="true" signature="5216:5623" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515337132550" expanded="true" signature="5726:6097" ph="UPDATE `2355... " />
+            <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+            <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+            <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+            <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
           </folding>
         </state>
       </provider>
@@ -1055,21 +1098,21 @@
           <caret line="20" column="0" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515337132550" expanded="true" signature="1094:1143" ph="DELETE FROM " />
-            <marker date="1515337132550" expanded="true" signature="1094:1144" ph="DELETE FROM " />
-            <marker date="1515337132550" expanded="true" signature="1549:1585" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2034:2048" ph="select * fro... tickets" />
-            <marker date="1515337132550" expanded="true" signature="2034:2053" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2469:2499" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2469:2500" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3011" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3012" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3013" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3028" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="3654:3700" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="5216:5513" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515337132550" expanded="true" signature="5216:5623" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515337132550" expanded="true" signature="5726:6097" ph="UPDATE `2355... " />
+            <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+            <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+            <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+            <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
           </folding>
         </state>
       </provider>
@@ -1270,32 +1313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/DeleteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UnassignCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1308,18 +1329,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="63" column="38" lean-forward="false" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/events/PlayerJoinEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
+            <element signature="e#773#774#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1339,22 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/ListCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="53" lean-forward="false" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1366,27 +1368,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/ListCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="82" column="57" lean-forward="true" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/DeleteCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CreateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/CommandManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/UpdateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="73" column="47" lean-forward="false" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/controller/command/HelpCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nl/daan/tasks/model/TaskRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="230" column="29" lean-forward="true" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
+        <state relative-caret-position="612">
+          <caret line="239" column="43" lean-forward="false" selection-start-line="239" selection-start-column="43" selection-end-line="239" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515337132550" expanded="true" signature="1094:1143" ph="DELETE FROM " />
-            <marker date="1515337132550" expanded="true" signature="1094:1144" ph="DELETE FROM " />
-            <marker date="1515337132550" expanded="true" signature="1549:1585" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2034:2048" ph="select * fro... tickets" />
-            <marker date="1515337132550" expanded="true" signature="2034:2053" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2469:2499" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2469:2500" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3011" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3012" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3013" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="2971:3028" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="3654:3700" ph="select * fro... tasks" />
-            <marker date="1515337132550" expanded="true" signature="5216:5513" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515337132550" expanded="true" signature="5216:5623" ph="INSERT INTO `23558`.`tickets`... " />
-            <marker date="1515337132550" expanded="true" signature="5726:6097" ph="UPDATE `2355... " />
+            <marker date="1515344604910" expanded="true" signature="1129:1170" ph="DELETE FROM " />
+            <marker date="1515344604910" expanded="true" signature="1129:1171" ph="DELETE FROM " />
+            <marker date="1515344604910" expanded="true" signature="1576:1612" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2061:2075" ph="select * fro... tickets" />
+            <marker date="1515344604910" expanded="true" signature="2061:2080" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2496:2526" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2496:2527" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3038" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3039" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3040" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="2998:3055" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="3681:3727" ph="select * fro... tasks" />
+            <marker date="1515344604910" expanded="true" signature="5380:5677" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344604910" expanded="true" signature="5380:5835" ph="INSERT INTO `23558`.`tickets`... " />
+            <marker date="1515344604910" expanded="true" signature="5938:6358" ph="UPDATE `2355... " />
           </folding>
         </state>
       </provider>

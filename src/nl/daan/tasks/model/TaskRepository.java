@@ -1,5 +1,6 @@
 package nl.daan.tasks.model;
 
+import nl.daan.tasks.util.MessageUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -53,13 +54,13 @@ public class TaskRepository implements ITaskRepository {
        }
     }
 
-    public ArrayList<Task> getUnsolved() {
+    public ArrayList<Task> getUnsolved(int pageId, int pageSize) {
        ArrayList<Task> tasks = new ArrayList<>();
        try {
 
           statement = connect.createStatement();
           resultSet = statement
-                  .executeQuery("select * from tasks where solved = 0");
+                  .executeQuery("select * from tasks where solved = 0 LIMIT "+pageId*pageSize+", "+pageSize);
 
           while (resultSet.next()) {
              Task t = convertTask(resultSet);
@@ -72,13 +73,13 @@ public class TaskRepository implements ITaskRepository {
        return tasks;
     }
 
-    public ArrayList<Task> getAll() {
+    public ArrayList<Task> getAll(int pageId, int pageSize) {
        ArrayList<Task> tasks = new ArrayList<>();
        try {
 
           statement = connect.createStatement();
           resultSet = statement
-                  .executeQuery("select * from tasks");
+                  .executeQuery("select * from tasks LIMIT "+pageId*pageSize+", "+pageSize);
 
           while (resultSet.next()) {
              Task t = convertTask(resultSet);
@@ -110,6 +111,26 @@ public class TaskRepository implements ITaskRepository {
     }
 
    @Override
+   public Task getNext() {
+      ArrayList<Task> tasks = new ArrayList<>();
+      try {
+
+         statement = connect.createStatement();
+         resultSet = statement
+                 .executeQuery("select * from tasks where solved = 0 LIMIT 1");
+
+         while (resultSet.next()) {
+            Task t = convertTask(resultSet);
+            tasks.add(t);
+         }
+      }
+      catch (Exception e) {
+         e.printStackTrace();
+      }
+      return tasks.get(0);
+   }
+
+   @Override
    public ArrayList<Task> getAssignedTasks(Player p) {
       ArrayList<Task> tasks = new ArrayList<>();
       try {
@@ -133,13 +154,13 @@ public class TaskRepository implements ITaskRepository {
    }
 
    @Override
-   public ArrayList<Task> getUnassigned() {
+   public ArrayList<Task> getUnassigned(int pageId, int pageSize) {
       ArrayList<Task> tasks = new ArrayList<>();
       try {
 
          statement = connect.createStatement();
          resultSet = statement
-                 .executeQuery("select * from tasks where assignedUUID IS NULL");
+                 .executeQuery("select * from tasks where assignedUUID IS NULL LIMIT "+pageId*pageSize+", "+pageSize);
 
          while (resultSet.next()) {
             Task t = convertTask(resultSet);
@@ -238,7 +259,7 @@ public class TaskRepository implements ITaskRepository {
          // Setup the connection with the DB
          connect = DriverManager
                  .getConnection("jdbc:mysql://s12.minespan.com/23558?"
-                         + "user=23558&password=e89c1c5513&connectTimeout=0&socketTimeout=0&autoReconnect=true");
+                         + "user=[issecret]&password=[issecret]&connectTimeout=0&socketTimeout=0&autoReconnect=true");
       }
       catch (Exception e) {
          e.printStackTrace();

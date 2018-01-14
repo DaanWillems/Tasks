@@ -13,7 +13,7 @@ public class HelpCommand extends Command{
     @Override
     public boolean run(CommandSender commandSender, org.bukkit.command.Command command, String s, String[] args, ITaskRepository taskRepository) {
         Player p = (Player) commandSender;
-        TextComponent header = new TextComponent( "---------Commands---------\n" );
+        TextComponent header = new TextComponent( "---------Task Commands---------\n" );
         header.setColor(ChatColor.GOLD);
         header.setBold(true);
 
@@ -49,6 +49,10 @@ public class HelpCommand extends Command{
         TextComponent claimCommand = new TextComponent( "/task claim - Gives you a task to complete\n" );
         claimCommand.setColor(ChatColor.BLUE);
         content.addExtra(claimCommand);
+
+        TextComponent assighnCommand = new TextComponent( "/task assign [id] [playername] - Assigns task to player\n" );
+        assighnCommand.setColor(ChatColor.BLUE);
+        content.addExtra(assighnCommand);
 
         TextComponent message = new TextComponent( "" );
         message.addExtra(header);

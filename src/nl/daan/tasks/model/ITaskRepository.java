@@ -11,13 +11,15 @@ public interface ITaskRepository {
 
     public void delete(Task task);
 
-    public ArrayList<Task> getUnsolved();
+    public ArrayList<Task> getUnsolved(int pageId, int pageSize);
 
-    public ArrayList<Task> getAll();
+    public ArrayList<Task> getAll(int pageId, int pageSize);
 
     public Task getById(int id);
 
+    public Task getNext();
+
     ArrayList<Task> getAssignedTasks(Player p);
 
-    ArrayList<Task> getUnassigned();
+    ArrayList<Task> getUnassigned(int pageId, int pageSize);
 }

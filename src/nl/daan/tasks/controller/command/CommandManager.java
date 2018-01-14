@@ -26,6 +26,8 @@ public class CommandManager implements CommandExecutor {
         commandMap.put("help", new HelpCommand());
         commandMap.put("list", new ListCommand());
         commandMap.put("delete", new DeleteCommand());
+        commandMap.put("confirm", new DeleteCommand());
+        commandMap.put("unconfirm", new DeleteCommand());
         commandMap.put("solve", new SolveCommand());
         commandMap.put("assign", new AssignCommand());
         commandMap.put("claim", new AssignCommand());

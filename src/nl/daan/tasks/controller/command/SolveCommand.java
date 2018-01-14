@@ -6,6 +6,7 @@ import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 import nl.daan.tasks.model.ITaskRepository;
 import nl.daan.tasks.model.Task;
+import nl.daan.tasks.util.MessageUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -23,7 +24,7 @@ public class SolveCommand extends Command {
         }
         int id = Integer.parseInt(args[1]);
         Task task = taskRepository.getById(id);
-        p.sendMessage(ChatColor.BLUE+task.title+" marked as solved");
+        MessageUtil.SendMessage(p,task.title+" marked as solved");
         task.solved = true;
         taskRepository.update(task);
         return true;

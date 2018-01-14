@@ -2,6 +2,7 @@ package nl.daan.tasks.controller.command;
 
 import nl.daan.tasks.model.ITaskRepository;
 import nl.daan.tasks.model.Task;
+import nl.daan.tasks.util.MessageUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -18,7 +19,7 @@ public class UnassignCommand extends Command {
         Task task = taskRepository.getById(id);
         task.assignedPlayer = null;
         taskRepository.update(task);
-        p.sendMessage(ChatColor.BLUE+task.title+" has been removed");
+        MessageUtil.SendMessage(p,task.title+"has been removed");
         return true;
     }
 }

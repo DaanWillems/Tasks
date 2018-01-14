@@ -28,13 +28,13 @@ public class DummyTaskRepository implements ITaskRepository {
         tasks.remove(task);
     }
 
-    public ArrayList<Task> getUnsolved() {
+    public ArrayList<Task> getUnsolved(int pageId, int pageSize) {
         return tasks.stream()
                 .filter(t->!t.solved)
                 .collect(Collectors.toCollection(ArrayList::new));
     }
 
-    public ArrayList<Task> getAll() {
+    public ArrayList<Task> getAll(int pageId, int pageSize) {
         return tasks;
     }
 
@@ -45,12 +45,17 @@ public class DummyTaskRepository implements ITaskRepository {
     }
 
     @Override
+    public Task getNext() {
+        return null;
+    }
+
+    @Override
     public ArrayList<Task> getAssignedTasks(Player p) {
         return null;
     }
 
     @Override
-    public ArrayList<Task> getUnassigned() {
+    public ArrayList<Task> getUnassigned(int pageId, int pageSize) {
         return null;
     }
 }

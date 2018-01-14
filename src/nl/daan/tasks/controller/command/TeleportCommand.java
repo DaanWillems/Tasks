@@ -2,6 +2,7 @@ package nl.daan.tasks.controller.command;
 
 import nl.daan.tasks.model.ITaskRepository;
 import nl.daan.tasks.model.Task;
+import nl.daan.tasks.util.MessageUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -18,7 +19,7 @@ public class TeleportCommand extends Command {
         }
         int id = Integer.parseInt(args[1]);
         Task task = taskRepository.getById(id);
-        p.sendMessage(ChatColor.BLUE+"Teleporting to "+task.title);
+        MessageUtil.SendMessage(p,"Teleporting to "+task.title);
         p.teleport(task.location);
         return true;
     }

@@ -1,6 +1,7 @@
 package nl.daan.tasks.controller.command;
 
 import nl.daan.tasks.model.ITaskRepository;
+import nl.daan.tasks.util.MessageUtil;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -10,7 +11,7 @@ import org.bukkit.entity.Player;
 public class Command  {
     public boolean run(CommandSender commandSender, org.bukkit.command.Command command, String s, String[] strings, ITaskRepository taskRepository) {
         Player p = (Player) commandSender;
-        p.sendMessage("command not yet implemented");
+        MessageUtil.SendMessage(p,"command not yet implemented");
         return true;
     }
 

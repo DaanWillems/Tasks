@@ -2,6 +2,7 @@ package nl.daan.tasks.controller.command;
 
 import nl.daan.tasks.model.ITaskRepository;
 import nl.daan.tasks.model.Task;
+import nl.daan.tasks.util.MessageUtil;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -23,6 +24,7 @@ public class CreateCommand extends Command {
     @Override
     public boolean run(CommandSender commandSender, org.bukkit.command.Command command, String s, String[] args, ITaskRepository taskRepository) {
         Player p = (Player) commandSender;
+
         Task task = new Task();
 
         String title = null;
@@ -76,7 +78,7 @@ public class CreateCommand extends Command {
         task.deadline = deadline;
 
         taskRepository.insert(task);
-        p.sendMessage(ChatColor.BLUE+"Task created.");
+        MessageUtil.SendMessage(p,"Task created.");
         return true;
     }
 }

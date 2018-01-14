@@ -1,5 +1,5 @@
 name: Tasks
-version: 0.1
+version: 0.9
 author: Solawep
 main: nl.daan.tasks.controller.Main
 commands:

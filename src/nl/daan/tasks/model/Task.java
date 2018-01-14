@@ -8,6 +8,7 @@ import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
+import org.apache.commons.lang.WordUtils;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -78,7 +79,7 @@ public class Task {
         }
 
         element.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Id: "+id+"\n"
-                +"Description: "+description+"\n"
+                +"Description: "+WordUtils.wrap(description, 30, "\n", true)+"\n"
                 +"Creator: "+creatorName+"\n"
                 +"Deadline: "+deadlineString).create()));
         element.setColor(ChatColor.AQUA);
@@ -118,25 +119,20 @@ public class Task {
             solve.setColor(ChatColor.GREEN);
             solve.setBold(true);
         }
-        TextComponent delete = null;
-
-        if(listingAll) {
-            delete = new TextComponent(" Delete \n" );
-            delete.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Delete this task").create() ) );
-            delete.setColor(ChatColor.RED);
-            delete.setBold(true);
-        } else {
-            delete = new TextComponent(" Delete \n" );
-            delete.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Delete this task").create() ) );
-            delete.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/task delete "+id) );
-            delete.setColor(ChatColor.RED);
-            delete.setBold(true);
-        }
+        TextComponent delete = new TextComponent(" Delete \n" );
+        delete.setHoverEvent( new HoverEvent( HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Delete this task").create() ) );
+        delete.setClickEvent( new ClickEvent( ClickEvent.Action.RUN_COMMAND, "/task delete "+id) );
+        delete.setColor(ChatColor.RED);
+        delete.setBold(true);
 
         element.addExtra(assign);
         element.addExtra(teleport);
         element.addExtra(solve);
         element.addExtra(delete);
+
+        if(solved) {
+            element.setStrikethrough(true);
+        }
         return element;
     }
 }
